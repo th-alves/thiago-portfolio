@@ -21,6 +21,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/mq-telas-menores.css" />
     <script src="assets/js/scripts.js" defer></script>
     <title>Thiago Souza Portfolio</title>
   </head>
@@ -33,10 +34,10 @@
       </div>
       <ul>
         <li><a href="#main">Início</a></li>
-        <li><a href="#skills">Habilidades</a></li>
-        <li><a href="#about">Sobre mim</a></li>
+        <li><a href="#skills" class="hide">Habilidades</a></li>
+        <li><a href="#about" class="hide">Sobre mim</a></li>
         <li><a href="#portfolio">Portfólio</a></li>
-        <li><a href="#feedback">Feedback</a></li>
+        <li><a href="#feedback">Currículo</a></li>
       </ul>
       <button>Contate-me</button>
       <button id="menuButton" onclick="openMenu()">
@@ -54,7 +55,7 @@
         <button>Entrar em contato</button>
       </div>
       <div class="right">
-        <img src="assets/images/profile-pic.png" />
+        <img class="profile-pic" src="assets/images/profile-pic.png" />
       </div>
     </div>
 
@@ -144,38 +145,70 @@
 
       <div class="portfolio-items">
         <div class="item">
-          <img src="assets/images/projects/portfolio-images/portfolio-1.png" />
+          <img
+            src="assets/images/portfolio-images/destaqueImages/portfolio-first.png"
+          />
           <div class="info">
-            <h4>Chirp</h4>
+            <h4>TJey Bot</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros.
+              Um bot criado para ajudar na segurança da comunidade do seu
+              servidor Discord.
             </p>
-            <a href="#"
+            <a
+              href="assets/projects/Destaques/TJey Bot/index.html"
+              target="_blank"
               >Ver projeto completo <i class="bx bx-link-external"></i
             ></a>
           </div>
         </div>
         <div class="item">
-          <img src="assets/sc-2.jpg" />
+          <img
+            src="assets/images/portfolio-images/destaqueImages/portfolio-second.png"
+          />
           <div class="info">
-            <h4>Simple Blog Page</h4>
+            <h4>Spense</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros.
+              Spense é uma plataforma aberta para indivíduos compartilharem seus
+              pensamentos não filtrados. Discuta os tópicos que você adora e
+              seja pago por fazer exatamente isso.
             </p>
-            <a href="#">View in Youtube <i class="bx bx-link-external"></i></a>
+            <a
+              href="assets/projects/Destaques/Spense/index.html"
+              target="_blank"
+              >Ver projeto completo <i class="bx bx-link-external"></i
+            ></a>
           </div>
         </div>
         <div class="item">
-          <img src="assets/sc-3.jpg" />
+          <img
+            src="assets/images/portfolio-images/destaqueImages/portfolio-third.png"
+          />
           <div class="info">
-            <h4>Animated Nav</h4>
+            <h4>Fiber</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros.
+              Com a Fiber, você pode configurar seu próprio portfólio pessoal em
+              minutos com dezenas de lindos modelos pré-fabricados.
             </p>
-            <a href="#">View in Youtube <i class="bx bx-link-external"></i></a>
+            <a href="assets/projects/Destaques/Fiber/index.html" target="_blank"
+              >Ver projeto completo <i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            src="assets/images/portfolio-images/destaqueImages/portfolio-fourth.png"
+          />
+          <div class="info">
+            <h4>Speedy Music</h4>
+            <p>
+              Ouça os hits do momento, em um site, objetivo, e com um layout
+              confortável.
+            </p>
+            <a
+              href="assets/projects/Destaques/speedy-music/index.html"
+              target="_blank"
+              >Ver projeto completo <i class="bx bx-link-external"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -255,7 +288,7 @@
       <div class="top">
         <div class="logo">
           <img src="assets/logo.png" />
-          <a href="https://youtube.com/@AsmrProg">AsmrProg</a>
+          <a href="https://instagram.com/th_ntc">Thiago Souza</a>
         </div>
         <ul>
           <li><a href="#">Home</a></li>
@@ -273,7 +306,7 @@
       </div>
       <div class="separator"></div>
       <div class="bottom">
-        <p>Made With ❤️ By AsmrProg</p>
+        <p>Made With ❤️ By Thiago Souza</p>
         <div class="links">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>

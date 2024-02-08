@@ -1,4 +1,6 @@
+const nav = document.querySelector("nav");
+
 function openMenu() {
-  const nav = document.querySelector("nav");
-  nav.classList.toggle("open");
+  document.querySelectorAll(".hide");
+  nav.classList.toggle("open").classList.add(".hide");
 }
