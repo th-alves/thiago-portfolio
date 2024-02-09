@@ -181,7 +181,7 @@ nav button#menuButton {
 .skills h3,
 .about .right h3,
 .portfolio .header h3,
-.feedback h3 {
+.curriculo h3 {
   font-size: 40px;
   margin-top: 20px;
 }
@@ -295,13 +295,13 @@ nav button#menuButton {
 }
 
 .portfolio .portfolio-items {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }
 
 .portfolio .portfolio-items .item {
-  width: 30%;
+  width: 100%;
   background-color: #fff;
   border-radius: 10px;
   border-bottom: 4px solid transparent;
@@ -345,62 +345,103 @@ nav button#menuButton {
   font-size: 16px;
 }
 
-.feedback {
+/* Curriculo */
+.curriculo {
+  border-top: 1px solid rgba(211, 211, 211, 0.3);
   padding: 110px 85px;
 }
 
-.feedback .customers {
-  margin-top: 50px;
-  display: flex;
-  gap: 40px;
+.curriculo .btnCurriculo {
+  display: none;
 }
 
-.feedback .customers .item {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  border: 2px solid #006b6a;
-  border-radius: 10px;
-  padding: 30px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+.curriculo h3 {
+  margin-bottom: 1rem;
 }
 
-.feedback .customers .item .rating {
-  color: #006b6a;
-  font-size: 22px;
+.curriculo .grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 
-.feedback .customers .item:hover {
-  border-color: #5e3bee;
+#educacao {
+  grid-area: 1 / 1 / 3 / 3;
+}
+#experiencias {
+  grid-area: 1 / 4 / 3 / 6;
+}
+#conhecimentos {
+  grid-area: 4 / 1 / 6 / 3;
+}
+#certificacoes {
+  grid-area: 4 / 4 / 6 / 6;
+}
+#voluntariado {
+  grid-area: 5 / 1 / 5 / 3;
 }
 
-.feedback .customers .item p {
-  line-height: 22px;
-  font-size: 14px;
-}
-
-.feedback .customers .item .user {
+.curriculo .curriculo-content .flex-container {
   display: flex;
   align-items: center;
-  gap: 10px;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
-.feedback .customers .item .user img {
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
-  border-radius: 50%;
+.curriculo .item {
+  background-color: #fff;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  height: auto;
+  max-width: 300px;
 }
-
-.feedback .customers .item .user h5 {
-  font-size: 13px;
+.curriculo .item .course {
+  display: flex;
+  flex-direction: column;
+}
+.curriculo .item .name p {
+  color: #000;
+  font-weight: 700;
+}
+.curriculo .item .course span {
+  margin-bottom: 0.5rem;
+  color: #000;
   font-weight: 500;
-  margin-bottom: 3px;
+}
+.curriculo .item .course p {
+  color: #858585;
 }
 
-.feedback .customers .item .user p {
-  font-size: 12px;
+/* Conhecimentos */
+#conhecimentos .flex-container .item .name span svg {
+  font-size: 20px;
+}
+
+/* Certificações */
+#certificacoes .flex-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#certificacoes .flex-container .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 250px;
+}
+
+#certificacoes .flex-container .item,
+#conhecimentos .flex-container .item {
+  text-align: center;
+}
+
+#certificacoes .flex-container .item .name img {
+  margin: 0 auto 1rem;
+  width: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
 }
 
 footer {

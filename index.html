@@ -37,7 +37,7 @@
         <li><a href="#skills" class="hide">Habilidades</a></li>
         <li><a href="#about" class="hide">Sobre mim</a></li>
         <li><a href="#portfolio">Portfólio</a></li>
-        <li><a href="#feedback">Currículo</a></li>
+        <li><a href="#curriculo">Currículo</a></li>
       </ul>
       <button>Contate-me</button>
       <button id="menuButton" onclick="openMenu()">
@@ -49,7 +49,7 @@
       <div class="left">
         <h5><span>Olá,</span> me chamo Thiago.</h5>
         <h3>
-          Vamos fazer <span>suas ideias</span> sairem do papel, e se tornar
+          Vamos fazer <span>suas ideias</span> sairem do papel, e se tornarem
           realidade.
         </h3>
         <button>Entrar em contato</button>
@@ -214,73 +214,216 @@
       </div>
     </div>
 
-    <div class="feedback" id="feedback">
-      <h5>Clients Reviews</h5>
-      <h3>Customers Feedback</h3>
-      <div class="customers">
-        <div class="item">
-          <div class="rating">
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-          </div>
-          <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi
-            quis viverra.
-          </p>
-          <div class="user">
-            <img src="assets/us-1.jpg" />
-            <div class="info">
-              <h5>Dianne Russell</h5>
-              <p>Starbucks</p>
+    <!-- Currículo -->
+    <div class="curriculo" id="curriculo">
+      <h5>Currículo</h5>
+      <a class="btnCurriculo" href="assets/currículo-thiago.pdf" target="_blank"
+        >Conferir currílo completo</a
+      >
+      <div class="grid-container">
+        <section class="curriculo-content" id="educacao">
+          <h3>Educação</h3>
+          <div class="flex-container">
+            <div class="item">
+              <div class="name">
+                <p>Graduação Interrompida</p>
+              </div>
+              <div class="course">
+                <span>Uninove 2020 - 2020</span>
+                <p>Tecnologia em Análise e Desenvolvimento de Sistemas</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="name">
+                <p>Médio Completo</p>
+              </div>
+              <div class="course">
+                <span>E.E João Solimeo 2016 - 2018</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="item">
-          <div class="rating">
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-          </div>
-          <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi
-            quis viverra.
-          </p>
-          <div class="user">
-            <img src="assets/us-2.jpg" />
-            <div class="info">
-              <h5>Kristian Watson</h5>
-              <p>Louis Vuitton</p>
+        </section>
+
+        <!-- Experiências -->
+        <section class="curriculo-content" id="experiencias">
+          <h3>Experiências</h3>
+          <div class="flex-container">
+            <div class="item">
+              <div class="name">
+                <p>Scope</p>
+                <span>Manutenção e Instalações Auxiliar/Operacional</span>
+              </div>
+              <div class="course">
+                <span>Mooca 2022 - 2022</span>
+                <p>
+                  Ajudava na montagem de equipamentos, e auxiliava os técnicos
+                  na instalação e verificação do funcionamento do equipamento.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="name">
+                <p>Concentrix</p>
+                <span>Call Center Receptivo Auxiliar/Operacional</span>
+              </div>
+              <div class="course">
+                <span>Mooca 2022 - 2022</span>
+                <p>
+                  Atuava na área de Chat Support, orientando os usuários,
+                  tirando dúvidas, ajudando no que fosse necessário.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="item">
-          <div class="rating">
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-            <i class="bx bxs-star"></i>
-          </div>
-          <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi
-            quis viverra.
-          </p>
-          <div class="user">
-            <img src="assets/us-3.jpg" />
-            <div class="info">
-              <h5>Kathryn Murphy</h5>
-              <p>McDonald's</p>
+        </section>
+
+        <!-- Conhecimentos -->
+        <section class="curriculo-content" id="conhecimentos">
+          <h3>Conhecimentos</h3>
+          <div class="flex-container">
+            <div class="item">
+              <div class="name">
+                <img src="assets/images/language.png" alt="icon language" />
+                <p>Idiomas</p>
+                <span>Inglês</span>
+              </div>
+              <div class="course">
+                <span>Intermediário</span>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="name">
+                <img src="assets/images/monitor.png" alt="icon language" />
+                <p>Tecnologia</p>
+                <span>Pacote Office</span>
+              </div>
+              <div class="course">
+                <span>Básico</span>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
+
+        <!-- Certificações -->
+        <section class="curriculo-content" id="certificacoes">
+          <h3>Certificações</h3>
+          <div class="flex-container">
+            <div class="item">
+              <div class="name">
+                <img
+                  src="https://storage.googleapis.com/taqe-storage/production/public/companies/certifications/logos/campinho-digital_15-12-2023-11-24-24-917_T.png"
+                  alt=""
+                />
+                <p>Escola da Nuvem</p>
+                <span>Oferecido por Campinho Digital</span>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="name">
+                <img
+                  src="https://storage.googleapis.com/taqe-storage/production/public/companies/certifications/logos/campinho-digital_10-01-2024-16-54-52-249_T.jpeg"
+                  alt="icon language"
+                />
+                <p>Certified Cloud Practioner</p>
+                <span>Oferecido por Campinho Digital</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="name">
+                <img
+                  src="https://hermes.dio.me/tracks/62ed1f1d-8d76-4bbc-905f-e73d20cb82f5.png"
+                  alt="icon language"
+                />
+                <p>HTML 5 Developer</p>
+              </div>
+              <div class="course">
+                <span>Dio.me</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="name">
+                <img
+                  src="https://hermes.dio.me/tracks/da043c7a-7189-441e-bf28-adc2d05a4934.png"
+                  alt="icon language"
+                />
+                <p>CSS 3 Developer</p>
+              </div>
+              <div class="course">
+                <span>Dio.me</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="name">
+                <img
+                  src="https://hermes.dio.me/tracks/55e7040f-775b-47e5-a8fb-69d002ca17a9.png"
+                  alt="icon language"
+                />
+                <p>JavaScript Developer</p>
+              </div>
+              <div class="course">
+                <span>Dio.me</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="name">
+                <img
+                  src="https://hermes.dio.me/tracks/68c81887-a1c2-440d-a7ea-7777bc10cd41.png"
+                  alt="icon language"
+                />
+                <p>React Developer</p>
+              </div>
+              <div class="course">
+                <span>Dio.me</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="name">
+                <img
+                  src="https://hermes.dio.me/tracks/0b5c4809-2339-47e7-b9df-56359e44ac1a.png"
+                  alt="icon language"
+                />
+                <p>UX Design (Figma)</p>
+              </div>
+              <div class="course">
+                <span>Dio.me</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Voluntariado -->
+        <section class="curriculo-content" id="voluntariado">
+          <h3>Voluntariado</h3>
+          <div class="flex-container">
+            <div class="item">
+              <div class="name">
+                <p>G.E.B</p>
+              </div>
+              <div class="course">
+                <span>Doação de Alimentos 2017 - 2017</span>
+                <p>
+                  Fazia pães em uma instituição, e juntos saímos para distribuir
+                  para os moradores de rua.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="name">
+                <p>G.E.B</p>
+              </div>
+              <div class="course">
+                <span>Distribuição 2017 - 2017</span>
+                <p>
+                  Fazíamos arrecadações de roupas para distribuir as pessoas
+                  necessitadas, desde moradores de rua, até pessoas de baixa
+                  renda na comunidade.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
 
@@ -316,3 +459,5 @@
     </footer>
   </body>
 </html>
+
+<!--  -->
