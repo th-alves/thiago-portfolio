@@ -49,7 +49,7 @@
   nav {
     padding: 0 40px;
   }
-  nav button {
+  nav .contactme {
     display: none;
   }
 
@@ -63,6 +63,10 @@
 
   .main {
     flex-direction: column;
+  }
+
+  .main .left .telphone {
+    text-align: center;
   }
 
   .main .right,
@@ -206,7 +210,7 @@
     font-size: 16px;
   }
 
-  .main .left button {
+  .main .left .telphone {
     width: 100%;
   }
 
@@ -214,7 +218,7 @@
     width: 100%;
   }
 
-  .portfolio .header button {
+  .portfolio .header .mygit {
     font-size: 12px;
     padding: 8px 14px;
   }
