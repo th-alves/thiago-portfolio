@@ -6,6 +6,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -179,6 +183,9 @@ nav button#menuButton {
 
 .skills {
   padding: 110px 85px 0;
+  animation: wipe-in-up;
+  animation-duration: 2s;
+  animation-fill-mode: both;
 }
 
 .skills h3,
