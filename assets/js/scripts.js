@@ -5,8 +5,30 @@ function openMenu() {
   nav.classList.toggle("open").classList.add(".hide");
 }
 
-ScrollReveal().reveal("#main", { delay: 300, reset: true });
-ScrollReveal().reveal("#skills", { delay: 300, reset: true });
-ScrollReveal().reveal("#about", { delay: 300, reset: true });
-ScrollReveal().reveal("#portfolio", { delay: 300, reset: true });
-ScrollReveal().reveal("#curriculo", { delay: 300, reset: true });
+// Reveal
+ScrollReveal().reveal(".left", {
+  origin: "left",
+  duration: 2000,
+  distance: "20%",
+});
+ScrollReveal().reveal(".left h3", {
+  origin: "left",
+  duration: 1000,
+  distance: "20%",
+});
+ScrollReveal().reveal(".right", {
+  origin: "right",
+  duration: 1000,
+  distance: "20%",
+});
+
+ScrollReveal().reveal("#skills", {
+  origin: "right",
+  duration: 2000,
+  distance: "20%",
+});
+ScrollReveal().reveal(".item", {
+  origin: "right",
+  duration: 2000,
+  distance: "20%",
+});

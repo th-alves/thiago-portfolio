@@ -6,10 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-html.sr .load-hidden {
-  visibility: hidden;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -208,13 +204,11 @@ nav button#menuButton {
   border-radius: 10px;
   padding: 32px;
   border-bottom: 4px solid transparent;
-  cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .skills .skill-items .item:hover {
   border-color: #4b0047;
-  transform: scale(1.02);
 }
 
 .skills .skill-items .item .icon {
@@ -322,7 +316,6 @@ nav button#menuButton {
 
 .portfolio .portfolio-items .item:hover {
   border-color: #4b0047;
-  transform: translateY(-10px);
 }
 
 .portfolio .portfolio-items .item img {
