@@ -65,6 +65,11 @@ nav {
   z-index: 99;
 }
 
+.active {
+  border-bottom: 2px solid #000;
+  transition: border-bottom 0.3s ease-in-out;
+}
+
 nav .logo,
 footer .logo {
   display: flex;
