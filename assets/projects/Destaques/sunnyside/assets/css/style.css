@@ -317,9 +317,8 @@ footer .social-media {
 
 .attribution {
   position: absolute;
-  left: 44%;
+  left: 43%;
   font-size: 11px;
-  text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -380,6 +379,16 @@ footer .social-media {
 
   main .container .cta h3 {
     font-size: 2rem;
+  }
+
+  .attribution {
+    position: absolute;
+    left: 33%;
+    font-size: 11px;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+    font-family: var(--font-titles);
   }
 }
 
