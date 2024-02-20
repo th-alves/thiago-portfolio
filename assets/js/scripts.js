@@ -18,11 +18,6 @@ window.addEventListener("scroll", function () {
   });
 });
 
-function openMenu() {
-  document.querySelectorAll(".hide");
-  nav.classList.toggle("open").classList.add(".hide");
-}
-
 // Reveal
 ScrollReveal().reveal(".left", {
   origin: "left",
