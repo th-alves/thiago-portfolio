@@ -1,5 +1,4 @@
 const nav = document.querySelector("nav");
-
 window.addEventListener("scroll", function () {
   let navbarLinks = document.querySelectorAll(".navbar a");
   let fromTop = window.scrollY;
@@ -16,6 +15,12 @@ window.addEventListener("scroll", function () {
       link.classList.remove("active");
     }
   });
+});
+
+const navigation = document.getElementById("navigation");
+const openMenu = document.getElementById("menuButton");
+openMenu.addEventListener("click", () => {
+  navigation.classList.toggle("open");
 });
 
 // Reveal
