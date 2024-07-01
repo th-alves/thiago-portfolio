@@ -1,0 +1,335 @@
+@charset "UTF-8";
+
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+
+  /* Primary */
+  --Lime-Green: hsl(163, 72%, 41%);
+  --Bright-Red: hsl(356, 69%, 56%);
+
+  --Facebook: hsl(208, 92%, 53%);
+  --Twitter: hsl(203, 89%, 53%);
+  --Instagram: linear-gradient(to right, #fdc468, #df4996);
+
+  --YouTube: hsl(348, 97%, 39%);
+
+  /* Dark Theme */
+  /* Toggle */
+  --Toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+  /* BG */
+  --Very-Dark-Blue: hsl(230, 17%, 14%);
+  /* Top BG Pattern */
+  --Very-Dark-Blue: hsl(232, 19%, 15%);
+  /* Card BG */
+  --Dark-Desaturated-Blue: hsl(228, 28%, 20%);
+  /* Text */
+  --Desaturated-Blue: hsl(228, 34%, 66%);
+  /* Text */
+  --White: hsl(0, 0%, 100%);
+
+  /* Light Theme */
+  /* Toggle */
+  --Toggle: hsl(230, 22%, 74%);
+  /* Top BG Pattern */
+  --Very-Pale-Blue: hsl(225, 100%, 98%);
+  /* Card BG */
+  --Light-Grayish-Blue: hsl(227, 47%, 96%);
+
+  /* Text */
+  --Dark-Grayish-Blue: hsl(228, 12%, 44%);
+  --Very-Dark-Blue: hsl(230, 17%, 14%);
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* Reutility Classes */
+p {
+  color: var(--Dark-Grayish-Blue);
+}
+
+img {
+  width: 20px;
+}
+
+/* Header */
+header {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+header .top-header .title-followers {
+  border-bottom: 1px solid hsla(230, 17%, 14%);
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+header .top-header p {
+  font-weight: 700;
+}
+
+header .top-header .dark-mode {
+  margin-top: 2rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+/* Estilo base do switcher */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Esconde o input checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Estilo do slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--Toggle);
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider:active:before {
+  width: 30px;
+}
+
+/* Dashboard Cards */
+header .dashboard-cards {
+  margin: 4rem 0;
+}
+header .dashboard-cards .card {
+  background-color: var(--Light-Grayish-Blue);
+
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+
+  border-radius: 5px;
+  text-align: center;
+
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+
+  transition: transform 0.7s ease-in-out;
+}
+
+header .dashboard-cards .card:hover {
+  transform: scale(1.02);
+}
+
+header .dashboard-cards .card:nth-child(1) {
+  border-top: 4px solid var(--Facebook);
+}
+
+header .dashboard-cards .card:nth-child(2) {
+  border-top: 4px solid var(--Twitter);
+}
+
+header .dashboard-cards .card:nth-child(3) {
+  border-top: 4px solid transparent;
+  border-image: var(--Instagram) 1;
+}
+
+header .dashboard-cards .card:nth-child(4) {
+  border-top: 4px solid var(--YouTube);
+}
+
+/* Cards - Top Card */
+header .dashboard-cards .card .top-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  color: var(--Dark-Grayish-Blue);
+}
+
+/* Cards - Stats Followers */
+header .dashboard-cards .card .stats-followers {
+  margin: 2rem 0;
+}
+
+header .dashboard-cards .card .stats-followers h1 {
+  font-size: 5rem;
+}
+
+header .dashboard-cards .card .stats-followers p {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* Cards - Bottom Card */
+header .dashboard-cards .card .bottom-card {
+  color: var(--Lime-Green);
+  font-weight: 700;
+}
+
+header .dashboard-cards .card:last-child .bottom-card {
+  color: var(--Bright-Red);
+}
+
+/* Overview */
+.overview-today {
+  margin: 4rem auto;
+  width: 90%;
+}
+
+.title-overview,
+.overview-today h3 {
+  color: var(--Dark-Grayish-Blue);
+}
+
+.title-overview {
+  margin: auto;
+  width: 90%;
+}
+
+.overview-today .overview {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: var(--Light-Grayish-Blue);
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+
+  transition: transform 0.7s ease-in-out;
+}
+
+.overview-today .overview:hover {
+  transform: scale(1.02);
+}
+
+/* Top and Bottom - Overview */
+.overview-today .overview .top-overview,
+.overview-today .overview .bottom-overview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.overview-today .overview .bottom-overview {
+  margin-top: 4rem;
+  font-weight: 700;
+}
+
+/* Follower counter - Overview */
+.overview-today .overview .bottom-overview .follower-counter {
+  color: var(--Lime-Green);
+}
+
+.overview-today .overview:nth-child(3) .bottom-overview .follower-counter {
+  color: var(--Bright-Red);
+}
+.overview-today .overview:nth-child(8) .bottom-overview .follower-counter {
+  color: var(--Bright-Red);
+}
+.overview-today .overview:last-child .bottom-overview .follower-counter {
+  color: var(--Bright-Red);
+}
+
+/* DarkMode Configs */
+body.dark {
+  background: var(--Very-Dark-Blue);
+  color: var(--White);
+}
+
+body.dark header .top-header p {
+  color: var(--Desaturated-Blue);
+}
+
+body.dark header .dashboard-cards .card,
+body.dark .overview-today .overview {
+  background-color: var(--Dark-Desaturated-Blue);
+  color: var(--White);
+}
+
+body.dark header .dashboard-cards .card .top-card span,
+body.dark header .dashboard-cards .card .stats-followers p,
+body.dark header .top-header p,
+body.dark .overview-today .overview .top-overview h3 {
+  color: var(--Desaturated-Blue);
+}
+
+/* Media Queries */
+@media screen and (min-width: 1024px) {
+  header .dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+  }
+
+  header .top-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  header .top-header .title-followers {
+    border: none;
+  }
+
+  header .top-header .dark-mode {
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .overview-today {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 4rem;
+    row-gap: 2rem;
+  }
+}

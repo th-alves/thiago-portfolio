@@ -1,0 +1,158 @@
+@media screen and (max-width: 1024px) {
+  header .navigation {
+    justify-content: space-between;
+  }
+  header .cta-header {
+    left: 6%;
+  }
+
+  .interactive {
+    padding: 8rem 6%;
+  }
+  .interactive .cta-interactive {
+    top: 45%;
+  }
+  aside {
+    padding: 6%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .interactive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 7%;
+  }
+
+  .interactive img {
+    max-width: 100%;
+  }
+
+  .interactive .cta-interactive {
+    position: static;
+    text-align: center;
+  }
+}
+
+/* Mobile Design */
+@media screen and (max-width: 768px) {
+  #openMenu {
+    display: block;
+  }
+
+  /* Header */
+  header {
+    background: url(../images/mobile/image-hero.jpg) no-repeat center top /
+      cover;
+  }
+
+  /* Header Nav */
+  header nav {
+    position: fixed;
+    top: 20%;
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    right: 0;
+    padding: 4rem 2rem;
+    transition: transform 0.7s ease-in-out;
+    transform: translate(-100%);
+    z-index: 100;
+  }
+
+  header .navigation .mobile-logo-burguer {
+    display: inline-flex;
+    align-items: center;
+    gap: 60%;
+    margin-bottom: 4rem;
+  }
+
+  header nav .mobile-logo-burguer button {
+    padding: 5px 1rem;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+  }
+
+  header nav .links {
+    flex-direction: column;
+    font-size: 3rem;
+  }
+
+  header nav .links li a {
+    font-family: var(--font-contrast);
+    font-weight: 300;
+  }
+
+  /* Navigation */
+  header .navigation {
+    justify-content: space-between;
+  }
+
+  header .cta-header {
+    left: 40px;
+    width: 80%;
+  }
+
+  header .cta-header h1 {
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+  /* Interactive */
+  .interactive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 7%;
+  }
+
+  .interactive img {
+    max-width: 100%;
+  }
+
+  .interactive .cta-interactive {
+    position: static;
+    text-align: center;
+  }
+
+  .interactive .cta-interactive p {
+    line-height: 30px;
+  }
+
+  /* Title */
+  .title {
+    font-size: 3rem;
+  }
+
+  /* Aside */
+  aside .divisor {
+    flex-direction: column;
+  }
+
+  aside .divisor h1 {
+    margin-bottom: 2rem;
+  }
+  aside .divisor a {
+    text-align: center;
+  }
+
+  /* Cards */
+  aside .cards {
+    grid-template-columns: 1fr;
+  }
+  /* Footer */
+  footer .logo-social-medias,
+  footer .footer-links {
+    flex-direction: column;
+  }
+
+  footer .logo-social-medias nav {
+    margin-top: 2rem;
+  }
+
+  footer .footer-links nav {
+    margin-bottom: 2rem;
+  }
+}

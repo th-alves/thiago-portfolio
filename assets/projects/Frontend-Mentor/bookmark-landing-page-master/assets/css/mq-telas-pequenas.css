@@ -1,0 +1,248 @@
+@media screen and (max-width: 992px) {
+  .navigation .openMenu {
+    display: none;
+  }
+
+  /* Header Container */
+  header {
+    margin: 7rem 0;
+  }
+  header section .header-container {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
+
+  /* Header CTA */
+  header section .header-container .cta-header {
+    order: 1;
+    margin-top: 4rem;
+  }
+
+  header section .header-container .cta-header h1 {
+    font-size: 3rem;
+  }
+
+  header section .header-container .img-header img,
+  main .features .container .tab-contents .content .content-img {
+    max-width: 100%;
+  }
+
+  header section .header-container::after {
+    width: 70%;
+    height: 300px;
+  }
+
+  main .features .container .tab-contents .content::after {
+    width: 70%;
+    top: 540px;
+    height: 250px;
+  }
+
+  /* Buttons CTA */
+  header section .header-container .buttons-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Main */
+  main {
+    margin: 0;
+  }
+
+  /* Tab Buttons */
+  main .features .container .tab-buttons {
+    flex-direction: column;
+    gap: 2rem;
+    border: none;
+  }
+
+  main .features .container .tab-buttons .tab-btn {
+    border-bottom: 1px solid rgb(238, 238, 238);
+  }
+
+  /* Tab Content */
+  main .features .container .tab-contents .content.show {
+    flex-direction: column;
+    gap: 8rem;
+    text-align: center;
+  }
+
+  /* Cards */
+  .extensions .extension-cards {
+    flex-direction: column;
+  }
+
+  .extensions .extension-cards .card:nth-child(2) {
+    transform: translateY(0px);
+  }
+
+  .extensions .extension-cards .card:nth-child(3) {
+    transform: translateY(0px);
+  }
+
+  /* Stats footer */
+  .stats .stats-count {
+    font-size: 1rem;
+  }
+
+  .stats h1 {
+    width: 100%;
+    font-size: 2.5rem;
+  }
+
+  .stats .input-stats i {
+    left: 55%;
+  }
+
+  .stats .input-stats button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Navigation */
+  .navigation {
+    justify-content: space-between;
+    padding: 0 3rem;
+  }
+  .navigation nav {
+    display: none;
+  }
+
+  .navigation .openMenu {
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+
+  /* Header Container */
+  header {
+    margin: 7rem 0;
+  }
+  header section .header-container {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
+
+  /* Header CTA */
+  header section .header-container .cta-header {
+    order: 1;
+    margin-top: 4rem;
+  }
+
+  header section .header-container .cta-header h1 {
+    font-size: 3rem;
+  }
+
+  header section .header-container .img-header img,
+  main .features .container .tab-contents .content .content-img {
+    max-width: 100%;
+  }
+
+  header section .header-container::after {
+    width: 80%;
+    height: 150px;
+  }
+
+  main .features .container .tab-contents .content::after {
+    width: 70%;
+    top: 540px;
+    height: 150px;
+  }
+
+  /* Buttons CTA */
+  header section .header-container .buttons-cta {
+    display: flex;
+  }
+
+  /* Main */
+  main {
+    margin: 0;
+  }
+
+  /* Tab Buttons */
+  main .features .container .tab-buttons {
+    flex-direction: column;
+    gap: 2rem;
+    border: none;
+  }
+
+  main .features .container .tab-buttons .tab-btn {
+    border-bottom: 1px solid rgb(238, 238, 238);
+  }
+
+  /* Tab Content */
+  main .features .container .tab-contents .content.show {
+    flex-direction: column;
+    gap: 8rem;
+    text-align: center;
+  }
+
+  /* Cards */
+  .extensions .extension-cards {
+    flex-direction: column;
+  }
+
+  .extensions .extension-cards .card:nth-child(2) {
+    transform: translateY(0px);
+  }
+
+  .extensions .extension-cards .card:nth-child(3) {
+    transform: translateY(0px);
+  }
+
+  /* Stats footer */
+  .stats .stats-count {
+    font-size: 1rem;
+  }
+
+  .stats h1 {
+    width: 100%;
+    font-size: 2.5rem;
+  }
+
+  .stats .input-stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .stats .input-stats i {
+    left: 90%;
+  }
+
+  .stats .input-stats button {
+    width: 100%;
+  }
+
+  /* Footer */
+  footer .footer-links,
+  footer .footer-links .menu {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  header section .header-container::after {
+    width: 80%;
+    height: 150px;
+    top: 190px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  header section .header-container::after {
+    width: 80%;
+    height: 150px;
+    top: 120px;
+  }
+
+  main .features .container .tab-contents .content::after {
+    width: 70%;
+    top: 520px;
+    height: 150px;
+  }
+}

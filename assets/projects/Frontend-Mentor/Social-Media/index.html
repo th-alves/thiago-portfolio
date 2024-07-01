@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/scripts.js" defer></script>
+
+    <title>SMD - Social Media Dashboard</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="title-followers">
+          <h1>Social Media Dashboard</h1>
+          <p>Total Followers: 23,004</p>
+        </div>
+        <div class="dark-mode">
+          <p>Dark Mode</p>
+          <label class="switch">
+            <input type="checkbox" id="mode-switcher" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Cards Dashboard -->
+      <section class="dashboard-cards">
+        <div class="card">
+          <!-- Top Card -->
+          <div class="top-card">
+            <img src="assets/images/facebook.png" alt="" />
+            <span class="nickname">@th_ntc</span>
+          </div>
+          <!-- Followers -->
+          <div class="stats-followers">
+            <h1>1987</h1>
+            <p>Followers</p>
+          </div>
+          <!-- Bottom Card -->
+          <div class="bottom-card">
+            <span class="follower-counter">
+              <i class="fa-solid fa-chevron-up"></i>
+              12 Today
+            </span>
+          </div>
+        </div>
+
+        <div class="card">
+          <!-- Top Card -->
+          <div class="top-card">
+            <img src="assets/images/twitter.png" alt="" />
+            <span class="nickname">@th_ntc</span>
+          </div>
+          <!-- Followers -->
+          <div class="stats-followers">
+            <h1>1044</h1>
+            <p>Followers</p>
+          </div>
+          <!-- Bottom Card -->
+          <div class="bottom-card">
+            <span class="follower-counter">
+              <i class="fa-solid fa-chevron-up"></i>
+              99 Today
+            </span>
+          </div>
+        </div>
+
+        <div class="card">
+          <!-- Top Card -->
+          <div class="top-card">
+            <img src="assets/images/instagram.png" alt="" />
+            <span class="nickname">@th_ntc</span>
+          </div>
+          <!-- Followers -->
+          <div class="stats-followers">
+            <h1>11k</h1>
+            <p>Followers</p>
+          </div>
+          <!-- Bottom Card -->
+          <div class="bottom-card">
+            <span class="follower-counter">
+              <i class="fa-solid fa-chevron-up"></i>
+              1099 Today
+            </span>
+          </div>
+        </div>
+
+        <div class="card">
+          <!-- Top Card -->
+          <div class="top-card">
+            <img src="assets/images/youtube.png" alt="" />
+            <span class="nickname">@th_ntc</span>
+          </div>
+          <!-- Followers -->
+          <div class="stats-followers">
+            <h1>8239</h1>
+            <p>Subscribers</p>
+          </div>
+          <!-- Bottom Card -->
+          <div class="bottom-card">
+            <span class="follower-counter">
+              <i class="fa-solid fa-chevron-down"></i>
+              144 Today
+            </span>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Overview -->
+    <h1 class="title-overview">Overview - Today</h1>
+    <section class="overview-today">
+      <!-- First Row -->
+      <div class="overview">
+        <div class="top-overview">
+          <h3>Page Views</h3>
+          <img src="assets/images/facebook.png" alt="" />
+        </div>
+
+        <div class="bottom-overview">
+          <h2>87</h2>
+          <span class="follower-counter">
+            <i class="fa-solid fa-chevron-up"></i>
+            3%
+          </span>
+        </div>
+      </div>
+
+      <div class="overview">
+        <div class="top-overview">
+          <h3>Likes</h3>
+          <img src="assets/images/facebook.png" alt="" />
+        </div>
+
+        <div class="bottom-overview">
+          <h2>52</h2>
+          <span class="follower-counter">
+            <i class="fa-solid fa-chevron-down"></i>
+            2%
+          </span>
+        </div>
+      </div>
+
+      <div class="overview">
+        <div class="top-overview">
+          <h3>Likes</h3>
+          <img src="assets/images/instagram.png" alt="" />
+        </div>
+
+        <div class="bottom-overview">
+          <h2>5462</h2>
+          <span class="follower-counter">
+            <i class="fa-solid fa-chevron-up"></i>
+            2257%
+          </span>
+        </div>
+      </div>
+
+      <div class="overview">
+        <div class="top-overview">
+          <h3>Profile Views</h3>
+          <img src="assets/images/instagram.png" alt="" />
+        </div>
+
+        <div class="bottom-overview">
+          <h2>52k</h2>
+          <span class="follower-counter">
+            <i class="fa-solid fa-chevron-up"></i>
+            1375%
+          </span>
+        </div>
+      </div>
+
+      <!-- Second Row -->
+      <div class="overview">
+        <div class="top-overview">
+          <h3>Retweets</h3>
+          <img src="assets/images/twitter.png" alt="" />
+        </div>
+
+        <div class="bottom-overview">
+          <h2>117</h2>
+          <span class="follower-counter">
+            <i class="fa-solid fa-chevron-up"></i>
+            303%
+          </span>
+        </div>
+      </div>
+
+      <div class="overview">
+        <div class="top-overview">
+          <h3>Likes</h3>
+          <img src="assets/images/twitter.png" alt="" />
+        </div>
+
+        <div class="bottom-overview">
+          <h2>507</h2>
+          <span class="follower-counter">
+            <i class="fa-solid fa-chevron-up"></i>
+            553%
+          </span>
+        </div>
+      </div>
+
+      <div class="overview">
+        <div class="top-overview">
+          <h3>Likes</h3>
+          <img src="assets/images/youtube.png" alt="" />
+        </div>
+
+        <div class="bottom-overview">
+          <h2>107</h2>
+          <span class="follower-counter">
+            <i class="fa-solid fa-chevron-down"></i>
+            19%
+          </span>
+        </div>
+      </div>
+
+      <div class="overview">
+        <div class="top-overview">
+          <h3>Total Views</h3>
+          <img src="assets/images/youtube.png" alt="" />
+        </div>
+
+        <div class="bottom-overview">
+          <h2>1407</h2>
+          <span class="follower-counter">
+            <i class="fa-solid fa-chevron-down"></i>
+            12%
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.instagram.com/th_ntc" target="_blank">Thiago Souza</a
+      >.
+    </div>
+  </body>
+</html>
